@@ -1,0 +1,4 @@
+test\SampleProject\BrowserFactory\Browser.class
+test\SampleProject\WebdriverFactory\DriverManager.class
+test\SampleProject\pageObjects\HomePage.class
+test\SampleProject\WebdriverFactory\DriverManager$1.class
