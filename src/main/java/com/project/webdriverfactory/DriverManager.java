@@ -16,8 +16,8 @@ import com.project.utilities.DataProvider;
 
 public class DriverManager {
 
-	private static WebDriver driver;
-	private static DriverManager driverManager;
+	private static WebDriver driver = null;
+	private static DriverManager driverManager = null;
 	Browser browser = Browser.valueOf(DataProvider.getProperty("browser.name"));
 	private static Logger logger = LogManager.getLogger(DriverManager.class);
 	
@@ -70,7 +70,9 @@ public class DriverManager {
 
 		if (driver != null) {
 			logger.info("Driver is not null, quitting the driver instances");
-			driver.quit();	
+			driver.quit();
+			driverManager = null;
+			driver = null;
 		}
 		else
 			logger.warn("Driver instance is already null, not able to quit the browser");
@@ -78,8 +80,10 @@ public class DriverManager {
 
 	public static void closeDriver() {
 
-		if (driver != null)
+		if (driver != null) {
 			driver.quit();
+			logger.info("The driver manager is assigned to null");
+		}			
 		else
 			logger.warn("Driver instance is already null, not able to close the browser");
 	}

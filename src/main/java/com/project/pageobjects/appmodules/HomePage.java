@@ -44,11 +44,36 @@ public class HomePage {
 		    		logger.error("The actual and expected headers are not equal actual {}, expected {}", headerText,expectedHeaders.get(i));
 		    		missingHeaders.add(headerText);
 		    	} else {
-		    		
+
 		    		logger.info("The header value {} is present in the homepage", headerText);
 		    	}
 		    }
 	    }
 	    return missingHeaders;
+	}
+
+	public List<String> verifyTripOptions(List<String> expectedList) {
+
+		List<String> missingHeaders = new ArrayList<>();
+		if (expectedList.size() != homePageObjects.tripElements.size()) {
+
+			logger.error("The actual and expected option counts are not matching");
+			throw new DataMismatchException("The actual and expected header counts are not matching");
+		} else {
+
+			for (int i = 0; i < expectedList.size(); i++){
+
+				String headerText = homePageObjects.tripElements.get(i).getText().trim();
+				if (! (headerText.equals(expectedList.get(i)))) {
+
+					logger.error("The actual and expected options are not equal actual {}, expected {}", headerText,expectedList.get(i));
+					missingHeaders.add(headerText);
+				} else {
+
+					logger.info("The option value {} is present in the homepage", headerText);
+				}
+			}
+		}
+		return missingHeaders;
 	}
 }
