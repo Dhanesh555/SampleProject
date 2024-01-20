@@ -13,7 +13,7 @@ import io.cucumber.java.Scenario;
 public class Hooks {
 	
 	private Logger logger = LogManager.getLogger(Hooks.class);
-	private SupportFactory support = new SupportFactory();
+	private SupportFactory support = new SupportFactory(); 
 	
 	@Before(order = 0)
 	public void initialiseBrowser() {
