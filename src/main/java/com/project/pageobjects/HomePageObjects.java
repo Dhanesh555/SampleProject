@@ -3,6 +3,7 @@ import java.util.List;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
 import com.project.webdriverfactory.DriverManager;
@@ -14,6 +15,10 @@ public class HomePageObjects {
 	
 	@FindBy(xpath = "//span[contains(@class,'headerIconTextAlignment')]")
 	public List<WebElement> headerElements;
+	
+	@FindBy(css = "ul.fswTabs.latoRegular.darkGreyText > li")
+	public List<WebElement> tripElements;
+	
 	
 	public HomePageObjects() {
 		
