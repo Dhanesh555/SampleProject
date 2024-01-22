@@ -25,6 +25,7 @@ public class Hooks {
 	public void launchURL() {
 		
 		DriverManager.launchURL(DataProvider.getProperty("login.url"));
+		support.checkAndCloseAddPopUp();
 	}
 	
 	@After(order = 1)

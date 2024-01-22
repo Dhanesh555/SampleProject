@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import com.project.exceptionhandler.DataMismatchException;
 import com.project.pageobjects.HomePageObjects;
 import com.project.webdriverfactory.DriverManager;
+import org.openqa.selenium.WebElement;
 
 public class HomePage {
 
@@ -54,11 +55,11 @@ public class HomePage {
 
 	public List<String> verifyTripOptions(List<String> expectedList) {
 
-		List<String> missingHeaders = new ArrayList<>();
+		List<String> missingOptions = new ArrayList<>();
 		if (expectedList.size() != homePageObjects.tripElements.size()) {
 
-			logger.error("The actual and expected option counts are not matching");
-			throw new DataMismatchException("The actual and expected header counts are not matching");
+			logger.error("The actual and expected option counts are not matching, actual: {}, ex {}");
+			throw new DataMismatchException("The actual and expected option counts are not matching");
 		} else {
 
 			for (int i = 0; i < expectedList.size(); i++){
@@ -67,13 +68,36 @@ public class HomePage {
 				if (! (headerText.equals(expectedList.get(i)))) {
 
 					logger.error("The actual and expected options are not equal actual {}, expected {}", headerText,expectedList.get(i));
-					missingHeaders.add(headerText);
+					missingOptions.add(headerText);
 				} else {
 
 					logger.info("The option value {} is present in the homepage", headerText);
 				}
 			}
 		}
-		return missingHeaders;
+		return missingOptions;
+	}
+
+	public void selectTripOption(String option) {
+
+		boolean flag = false;
+		for (WebElement optionElement: homePageObjects.tripElements) {
+
+			String actualOption = optionElement.getText().trim();
+			logger.debug("The option is: {}",actualOption);
+			if (actualOption.equals(option)) {
+
+				optionElement.click();
+				flag = true;
+				break;
+			}
+		}
+		if (!flag) {
+
+			throw new DataMismatchException("The option "+option+ "is not present in the UI");
+		} else {
+			logger.info("Clicked on the option {}", option);
+		}
+
 	}
 }

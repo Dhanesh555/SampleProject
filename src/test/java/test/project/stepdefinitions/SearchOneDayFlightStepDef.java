@@ -1,6 +1,6 @@
 package test.project.stepdefinitions;
 
-import java.util.List;
+import com.project.pageobjects.appmodules.HomePage;
 
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
@@ -9,13 +9,19 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class SearchOneDayFlightStepDef {
+	
+	HomePage homePage = new HomePage();
+	
     @Given("the home page has the following radio buttons")
     public void theHomePageHasTheFollowingRadioButtons(DataTable datatable) {
-
+    	
+    	homePage.verifyTripOptions(datatable.asList());
     }
 
-    @When("the user click on the one way radio button")
-    public void theUserClickOnTheOneWayRadioButton() {
+    @When("the user click on the {string} radio button")
+    public void theUserClickOnTheOneWayRadioButton(String option) {
+    	
+    	homePage.selectTripOption(option);
     }
     
     @And("Search for the flights with {string} {string} {int} {int} {int} {string} details and departure date current date")
