@@ -45,14 +45,13 @@ public class DriverManager {
 			switch (browser) {
 			case CHROME:
 				ChromeOptions options = new ChromeOptions();
-				options.addArguments("disable-infobars");
+				options.addArguments("--disable-infobars");
 				options.addArguments("--start-maximized");
 				options.addArguments("--remote-allow-origins=*");
 				options.addArguments("--disable-popup-blocking");
 				options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
-				driver = new ChromeDriver();
+				driver = new ChromeDriver(options);
 				logger.info("Launched chrome browser successfully");
-				driver.manage().window().maximize();
 				break;
 			case FIREFOX:
 				driver = new FirefoxDriver();
@@ -92,6 +91,7 @@ public class DriverManager {
 		
 		getDriver().get(url);
 		logger.info("Successfully navigated to the url {}", url);
+		driver.manage().deleteAllCookies();
 		getDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 	}
 }

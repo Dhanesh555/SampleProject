@@ -27,8 +27,10 @@ The make my trip home page has varius set of functionalities and are being test 
   @searchOneWayFlight
   Scenario Outline: Verify the user can search for a one way flight and get the results
     Given the home page has the following radio buttons
-      | One Way | Round Trip | Multi City |
-    When the user click on the one way radio button
+      | One Way 		| 
+      | Round Trip 	| 
+      |	Multi City 	|
+    When the user click on the "One Way" radio button
     And Search for the flights with "<from>" "<to>" <adult> <children> <infant> "<class>" details and departure date current date
     Then the user should be able to get the result flights from "<from>" to "<to>"
     

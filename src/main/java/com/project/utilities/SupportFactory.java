@@ -12,13 +12,15 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 import com.project.exceptionhandler.TestFrameworkException;
+import com.project.pageobjects.CommonObjects;
 import com.project.webdriverfactory.DriverManager;
 
-public class SupportFactory{
+public class SupportFactory extends WaitFactory{
 	
 	private WebDriver driver = DriverManager.getDriver();
 	private String screenShotPath = System.getProperty("user.dir") + DataProvider.getProperty("screenshot.dir.path");
     private Logger logger = LogManager.getLogger(SupportFactory.class);
+    CommonObjects commonObjects = new CommonObjects();
 	
 	public void takescreenshot(String scenarioName) {
 		
@@ -35,6 +37,20 @@ public class SupportFactory{
 			
 			logger.error("Unable to save the file {}", e);
 			throw new TestFrameworkException("Error occured while saving the screenshot");
+		}
+	}
+	
+	public void checkAndCloseAddPopUp() {
+		
+		switchToIframeIfPresent(commonObjects.notificationIframeElement, 3);
+		if (IsElementVisisbleAndClickable(commonObjects.addCloseElement, 1)) {
+		
+			commonObjects.addCloseElement.click();
+			logger.info("Successfully clicked on the add close button");
+			driver.switchTo().defaultContent();
+		} else {
+			
+			logger.info("The add window is not present in the UI");
 		}
 	}
 }
