@@ -27,6 +27,10 @@ public class SearchOneDayFlightStepDef {
     @And("Search for the flights with {string} {string} {int} {int} {int} {string} details and departure date current date")
     public void andSearchForFlights(String from, String to, int adult, int children, int infant, String travelClass) {
         
+    	homePage.enterFromToCity("from", from);
+    	homePage.enterFromToCity("to", to);
+    	homePage.selectTommorowDate();
+    	homePage.selectTravellersAndClass(adult, children, infant, travelClass);
     }
 
     @Then("the user should be able to get the result flights from {string} to {string}")

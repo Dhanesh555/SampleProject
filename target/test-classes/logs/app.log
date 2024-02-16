@@ -1,385 +1,136 @@
-2024-01-22 09:58:23.297 INFO [main] [com.project.webdriverfactory.DriverManager.getDriver(DriverManager.java:34)] - Instantiating driver manager
-2024-01-22 09:58:23.305 INFO [main] [com.project.utilities.DataProvider.<init>(DataProvider.java:29)] - Properties file loaded successfully
-2024-01-22 09:58:23.314 DEBUG [main] [com.project.utilities.DataProvider.<init>(DataProvider.java:30)] - Properties file loaded successfull [browser.name, browser.version, login.url, screenshot.dir.path]
-2024-01-22 09:58:23.314 DEBUG [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:50)] - Property CHROME readed successfully
-2024-01-22 09:58:23.315 INFO [main] [com.project.webdriverfactory.DriverManager.launchBrowser(DriverManager.java:44)] - driver is null and creating new driver instance
-2024-01-22 09:58:24.897 DEBUG [main] [io.netty.util.internal.logging.InternalLoggerFactory.useLog4J2LoggerFactory(InternalLoggerFactory.java:76)] - Using Log4J2 as the default logging framework
-2024-01-22 09:58:24.906 DEBUG [main] [io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:129)] - -Dio.netty.leakDetection.level: simple
-2024-01-22 09:58:24.906 DEBUG [main] [io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:130)] - -Dio.netty.leakDetection.targetRecords: 4
-2024-01-22 09:58:24.912 DEBUG [main] [io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:196)] - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@1e9804b9
-2024-01-22 09:58:24.934 DEBUG [main] [io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:497)] - -Dio.netty.noUnsafe: false
-2024-01-22 09:58:24.934 DEBUG [main] [io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:1001)] - Java version: 17
-2024-01-22 09:58:24.936 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:137)] - sun.misc.Unsafe.theUnsafe: available
-2024-01-22 09:58:24.937 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:161)] - sun.misc.Unsafe.copyMemory: available
-2024-01-22 09:58:24.937 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:193)] - sun.misc.Unsafe.storeFence: available
-2024-01-22 09:58:24.939 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:236)] - java.nio.Buffer.address: available
-2024-01-22 09:58:24.940 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:321)] - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
-2024-01-22 09:58:24.941 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:386)] - java.nio.Bits.unaligned: available, true
-2024-01-22 09:58:24.942 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:453)] - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @47089e5f
-2024-01-22 09:58:24.945 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:483)] - java.nio.DirectByteBuffer.<init>(long, {int,long}): unavailable
-2024-01-22 09:58:24.945 DEBUG [main] [io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:1159)] - sun.misc.Unsafe: available
-2024-01-22 09:58:24.945 DEBUG [main] [io.netty.util.internal.PlatformDependent.estimateMaxDirectMemory(PlatformDependent.java:1270)] - maxDirectMemory: 4219469824 bytes (maybe)
-2024-01-22 09:58:24.945 DEBUG [main] [io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1289)] - -Dio.netty.tmpdir: C:\Users\DHANES~1\AppData\Local\Temp (java.io.tmpdir)
-2024-01-22 09:58:24.946 DEBUG [main] [io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1368)] - -Dio.netty.bitMode: 64 (sun.arch.data.model)
-2024-01-22 09:58:24.946 DEBUG [main] [io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:1119)] - Platform: Windows
-2024-01-22 09:58:24.947 DEBUG [main] [io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:178)] - -Dio.netty.maxDirectMemory: -1 bytes
-2024-01-22 09:58:24.947 DEBUG [main] [io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:185)] - -Dio.netty.uninitializedArrayAllocationThreshold: -1
-2024-01-22 09:58:24.948 DEBUG [main] [io.netty.util.internal.CleanerJava9.<clinit>(CleanerJava9.java:71)] - java.nio.ByteBuffer.cleaner(): available
-2024-01-22 09:58:24.948 DEBUG [main] [io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:205)] - -Dio.netty.noPreferDirect: false
-2024-01-22 09:58:24.954 DEBUG [main] [io.netty.util.internal.PlatformDependent$Mpsc.<clinit>(PlatformDependent.java:1010)] - org.jctools-core.MpscChunkedArrayQueue: available
-2024-01-22 09:58:24.977 DEBUG [main] [io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:100)] - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
-2024-01-22 09:58:24.978 DEBUG [main] [io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:101)] - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
-2024-01-22 09:58:25.180 DEBUG [main] [io.netty.handler.ssl.JdkSslContext.<clinit>(JdkSslContext.java:83)] - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
-2024-01-22 09:58:25.180 DEBUG [main] [io.netty.handler.ssl.JdkSslContext.<clinit>(JdkSslContext.java:84)] - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
-2024-01-22 09:58:25.192 DEBUG [main] [io.netty.util.concurrent.GlobalEventExecutor.<clinit>(GlobalEventExecutor.java:53)] - -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
-2024-01-22 09:58:25.205 DEBUG [main] [io.netty.channel.MultithreadEventLoopGroup.<clinit>(MultithreadEventLoopGroup.java:44)] - -Dio.netty.eventLoopThreads: 24
-2024-01-22 09:58:25.214 DEBUG [main] [io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:110)] - -Dio.netty.noKeySetOptimization: false
-2024-01-22 09:58:25.215 DEBUG [main] [io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:111)] - -Dio.netty.selectorAutoRebuildThreshold: 512
-2024-01-22 09:58:25.278 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:157)] - -Dio.netty.allocator.numHeapArenas: 24
-2024-01-22 09:58:25.278 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:158)] - -Dio.netty.allocator.numDirectArenas: 24
-2024-01-22 09:58:25.279 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:160)] - -Dio.netty.allocator.pageSize: 8192
-2024-01-22 09:58:25.279 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:165)] - -Dio.netty.allocator.maxOrder: 9
-2024-01-22 09:58:25.280 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:169)] - -Dio.netty.allocator.chunkSize: 4194304
-2024-01-22 09:58:25.280 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:170)] - -Dio.netty.allocator.smallCacheSize: 256
-2024-01-22 09:58:25.280 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:171)] - -Dio.netty.allocator.normalCacheSize: 64
-2024-01-22 09:58:25.280 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:172)] - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
-2024-01-22 09:58:25.280 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:173)] - -Dio.netty.allocator.cacheTrimInterval: 8192
-2024-01-22 09:58:25.280 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:174)] - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
-2024-01-22 09:58:25.281 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:175)] - -Dio.netty.allocator.useCacheForAllThreads: false
-2024-01-22 09:58:25.281 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:176)] - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
-2024-01-22 09:58:25.296 DEBUG [main] [io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:89)] - -Dio.netty.allocator.type: pooled
-2024-01-22 09:58:25.296 DEBUG [main] [io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:98)] - -Dio.netty.threadLocalDirectBufferSize: 0
-2024-01-22 09:58:25.296 DEBUG [main] [io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:101)] - -Dio.netty.maxThreadLocalCharBufferSize: 16384
-2024-01-22 09:58:25.924 DEBUG [Forwarding newSession on session null to remote] [io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:79)] - -Dio.netty.processId: 114580 (auto-detected)
-2024-01-22 09:58:25.927 DEBUG [Forwarding newSession on session null to remote] [io.netty.util.NetUtil.<clinit>(NetUtil.java:148)] - -Djava.net.preferIPv4Stack: false
-2024-01-22 09:58:25.927 DEBUG [Forwarding newSession on session null to remote] [io.netty.util.NetUtil.<clinit>(NetUtil.java:149)] - -Djava.net.preferIPv6Addresses: false
-2024-01-22 09:58:25.936 DEBUG [Forwarding newSession on session null to remote] [io.netty.util.NetUtilInitializations.determineLoopback(NetUtilInitializations.java:145)] - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
-2024-01-22 09:58:25.937 DEBUG [Forwarding newSession on session null to remote] [io.netty.util.NetUtil$SoMaxConnAction.run(NetUtil.java:206)] - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
-2024-01-22 09:58:25.972 DEBUG [Forwarding newSession on session null to remote] [io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:101)] - -Dio.netty.machineId: 00:50:56:ff:fe:c0:00:08 (auto-detected)
-2024-01-22 09:58:26.021 DEBUG [AsyncHttpClient-1-2] [io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:63)] - -Dio.netty.buffer.checkAccessible: true
-2024-01-22 09:58:26.022 DEBUG [AsyncHttpClient-1-2] [io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:64)] - -Dio.netty.buffer.checkBounds: true
-2024-01-22 09:58:26.022 DEBUG [AsyncHttpClient-1-2] [io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:196)] - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@6a31be25
-2024-01-22 09:58:26.050 DEBUG [AsyncHttpClient-1-2] [io.netty.util.Recycler.<clinit>(Recycler.java:96)] - -Dio.netty.recycler.maxCapacityPerThread: 4096
-2024-01-22 09:58:26.050 DEBUG [AsyncHttpClient-1-2] [io.netty.util.Recycler.<clinit>(Recycler.java:97)] - -Dio.netty.recycler.ratio: 8
-2024-01-22 09:58:26.050 DEBUG [AsyncHttpClient-1-2] [io.netty.util.Recycler.<clinit>(Recycler.java:98)] - -Dio.netty.recycler.chunkSize: 32
-2024-01-22 09:58:26.050 DEBUG [AsyncHttpClient-1-2] [io.netty.util.Recycler.<clinit>(Recycler.java:99)] - -Dio.netty.recycler.blocking: false
-2024-01-22 09:58:26.050 DEBUG [AsyncHttpClient-1-2] [io.netty.util.Recycler.<clinit>(Recycler.java:100)] - -Dio.netty.recycler.batchFastThreadLocalOnly: true
-2024-01-22 09:58:26.687 DEBUG [AsyncHttpClient-1-2] [io.netty.handler.codec.compression.Brotli.<clinit>(Brotli.java:38)] - brotli4j not in the classpath; Brotli support will be unavailable.
-2024-01-22 09:58:26.781 DEBUG [main] [io.netty.util.internal.ThreadLocalRandom.newSeed(ThreadLocalRandom.java:214)] - -Dio.netty.initialSeedUniquifier: 0x77fb15e5c36a9dc8
-2024-01-22 09:58:26.834 INFO [main] [com.project.webdriverfactory.DriverManager.launchBrowser(DriverManager.java:54)] - Launched chrome browser successfully
-2024-01-22 09:58:26.835 WARN [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:48)] - The data provider is not null and cannot create new instance
-2024-01-22 09:58:26.835 DEBUG [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:50)] - Property /src/test/resources/screenshots/ readed successfully
-2024-01-22 09:58:30.005 INFO [main] [com.project.utilities.WaitFactory.switchToIframeIfPresent(WaitFactory.java:47)] - No frame with the provided element Proxy element for: DefaultElementLocator 'By.xpath: //iframe[contains(@name,'notification-frame')]' is avaiable in the DOM: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for frame to be available: Proxy element for: DefaultElementLocator 'By.xpath: //iframe[contains(@name,'notification-frame')]' (tried for 3 second(s) with 500 milliseconds interval)
-2024-01-22 09:58:31.098 INFO [main] [com.project.utilities.WaitFactory.IsElementVisisbleAndClickable(WaitFactory.java:31)] - The element Proxy element for: DefaultElementLocator 'By.cssSelector: a.close' is not visible or clickable: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.cssSelector: a.close' (tried for 1 second(s) with 500 milliseconds interval)
-2024-01-22 09:58:31.098 INFO [main] [com.project.utilities.SupportFactory.checkAndCloseAddPopUp(SupportFactory.java:53)] - The add window is not present in the UI
-2024-01-22 09:58:31.099 WARN [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:48)] - The data provider is not null and cannot create new instance
-2024-01-22 09:58:31.100 DEBUG [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:50)] - Property https://www.makemytrip.com/ readed successfully
-2024-01-22 09:58:33.188 INFO [main] [com.project.webdriverfactory.DriverManager.launchURL(DriverManager.java:93)] - Successfully navigated to the url https://www.makemytrip.com/
-2024-01-22 09:58:33.501 DEBUG [main] [test.project.stepdefinitions.FunctionalPageHeadersStepDef.userIsOnTheMakeMyTripLoginPage(FunctionalPageHeadersStepDef.java:25)] - Titles: expected - MakeMyTrip and actual - MakeMyTrip - #1 Travel Website 50% OFF on Hotels, Flights & Holiday
-2024-01-22 09:58:33.501 INFO [main] [test.project.stepdefinitions.FunctionalPageHeadersStepDef.userIsOnTheMakeMyTripLoginPage(FunctionalPageHeadersStepDef.java:27)] - The titles are equal
-2024-01-22 09:58:33.558 INFO [main] [test.project.stepdefinitions.FunctionalPageHeadersStepDef.userIsAbleToSeeTheMakeMyTripLogoIcon(FunctionalPageHeadersStepDef.java:34)] - The logo is present in the home page
-2024-01-22 09:58:33.606 INFO [main] [com.project.pageobjects.appmodules.HomePage.verifyFunctionalHeaders(HomePage.java:49)] - The header value Flights is present in the homepage
-2024-01-22 09:58:33.623 INFO [main] [com.project.pageobjects.appmodules.HomePage.verifyFunctionalHeaders(HomePage.java:49)] - The header value Hotels is present in the homepage
-2024-01-22 09:58:33.650 INFO [main] [com.project.pageobjects.appmodules.HomePage.verifyFunctionalHeaders(HomePage.java:49)] - The header value Homestays & Villas is present in the homepage
-2024-01-22 09:58:33.671 INFO [main] [com.project.pageobjects.appmodules.HomePage.verifyFunctionalHeaders(HomePage.java:49)] - The header value Holiday Packages is present in the homepage
-2024-01-22 09:58:33.690 INFO [main] [com.project.pageobjects.appmodules.HomePage.verifyFunctionalHeaders(HomePage.java:49)] - The header value Trains is present in the homepage
-2024-01-22 09:58:33.705 INFO [main] [com.project.pageobjects.appmodules.HomePage.verifyFunctionalHeaders(HomePage.java:49)] - The header value Buses is present in the homepage
-2024-01-22 09:58:33.723 INFO [main] [com.project.pageobjects.appmodules.HomePage.verifyFunctionalHeaders(HomePage.java:49)] - The header value Cabs is present in the homepage
-2024-01-22 09:58:33.756 INFO [main] [com.project.pageobjects.appmodules.HomePage.verifyFunctionalHeaders(HomePage.java:49)] - The header value Forex Card & Currency is present in the homepage
-2024-01-22 09:58:33.773 INFO [main] [com.project.pageobjects.appmodules.HomePage.verifyFunctionalHeaders(HomePage.java:49)] - The header value Travel Insurance is present in the homepage
-2024-01-22 09:58:33.790 DEBUG [main] [test.project.stepdefinitions.Hooks.tearDown(Hooks.java:37)] - executed scenario Verify the user can view all the functional page headers, file:///C:/Users/Dhanesh%20M/Sruthi/SampleProject/src/test/resources/features/homepage.feature, status: PASSED
-2024-01-22 09:58:33.790 INFO [main] [com.project.webdriverfactory.DriverManager.quitDriver(DriverManager.java:71)] - Driver is not null, quitting the driver instances
-2024-01-22 09:58:34.120 INFO [main] [com.project.webdriverfactory.DriverManager.getDriver(DriverManager.java:34)] - Instantiating driver manager
-2024-01-22 09:58:34.120 WARN [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:48)] - The data provider is not null and cannot create new instance
-2024-01-22 09:58:34.120 DEBUG [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:50)] - Property CHROME readed successfully
-2024-01-22 09:58:34.120 INFO [main] [com.project.webdriverfactory.DriverManager.launchBrowser(DriverManager.java:44)] - driver is null and creating new driver instance
-2024-01-22 09:58:35.105 INFO [main] [com.project.webdriverfactory.DriverManager.launchBrowser(DriverManager.java:54)] - Launched chrome browser successfully
-2024-01-22 09:58:35.105 WARN [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:48)] - The data provider is not null and cannot create new instance
-2024-01-22 09:58:35.105 DEBUG [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:50)] - Property /src/test/resources/screenshots/ readed successfully
-2024-01-22 09:58:38.269 INFO [main] [com.project.utilities.WaitFactory.switchToIframeIfPresent(WaitFactory.java:47)] - No frame with the provided element Proxy element for: DefaultElementLocator 'By.xpath: //iframe[contains(@name,'notification-frame')]' is avaiable in the DOM: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for frame to be available: Proxy element for: DefaultElementLocator 'By.xpath: //iframe[contains(@name,'notification-frame')]' (tried for 3 second(s) with 500 milliseconds interval)
-2024-01-22 09:58:39.350 INFO [main] [com.project.utilities.WaitFactory.IsElementVisisbleAndClickable(WaitFactory.java:31)] - The element Proxy element for: DefaultElementLocator 'By.cssSelector: a.close' is not visible or clickable: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.cssSelector: a.close' (tried for 1 second(s) with 500 milliseconds interval)
-2024-01-22 09:58:39.350 INFO [main] [com.project.utilities.SupportFactory.checkAndCloseAddPopUp(SupportFactory.java:53)] - The add window is not present in the UI
-2024-01-22 09:58:39.350 WARN [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:48)] - The data provider is not null and cannot create new instance
-2024-01-22 09:58:39.350 DEBUG [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:50)] - Property https://www.makemytrip.com/ readed successfully
-2024-01-22 09:58:41.629 INFO [main] [com.project.webdriverfactory.DriverManager.launchURL(DriverManager.java:93)] - Successfully navigated to the url https://www.makemytrip.com/
-2024-01-22 09:58:41.780 DEBUG [main] [test.project.stepdefinitions.FunctionalPageHeadersStepDef.userIsOnTheMakeMyTripLoginPage(FunctionalPageHeadersStepDef.java:25)] - Titles: expected - MakeMyTrip and actual - MakeMyTrip - #1 Travel Website 50% OFF on Hotels, Flights & Holiday
-2024-01-22 09:58:41.780 INFO [main] [test.project.stepdefinitions.FunctionalPageHeadersStepDef.userIsOnTheMakeMyTripLoginPage(FunctionalPageHeadersStepDef.java:27)] - The titles are equal
-2024-01-22 09:58:41.808 INFO [main] [com.project.pageobjects.appmodules.HomePage.verifyTripOptions(HomePage.java:74)] - The option value One Way is present in the homepage
-2024-01-22 09:58:41.827 INFO [main] [com.project.pageobjects.appmodules.HomePage.verifyTripOptions(HomePage.java:74)] - The option value Round Trip is present in the homepage
-2024-01-22 09:58:41.840 INFO [main] [com.project.pageobjects.appmodules.HomePage.verifyTripOptions(HomePage.java:74)] - The option value Multi City is present in the homepage
-2024-01-22 09:58:41.859 DEBUG [main] [com.project.pageobjects.appmodules.HomePage.selectTripOption(HomePage.java:87)] - The option is: One Way
-2024-01-22 09:58:41.958 INFO [main] [com.project.pageobjects.appmodules.HomePage.selectTripOption(HomePage.java:99)] - Clicked on the option One Way
-2024-01-22 09:58:41.958 DEBUG [main] [test.project.stepdefinitions.Hooks.tearDown(Hooks.java:37)] - executed scenario Verify the user can search for a one way flight and get the results, file:///C:/Users/Dhanesh%20M/Sruthi/SampleProject/src/test/resources/features/homepage.feature, status: PASSED
-2024-01-22 09:58:41.958 INFO [main] [com.project.webdriverfactory.DriverManager.quitDriver(DriverManager.java:71)] - Driver is not null, quitting the driver instances
-2024-01-22 09:58:42.150 INFO [main] [com.project.webdriverfactory.DriverManager.getDriver(DriverManager.java:34)] - Instantiating driver manager
-2024-01-22 09:58:42.150 WARN [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:48)] - The data provider is not null and cannot create new instance
-2024-01-22 09:58:42.150 DEBUG [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:50)] - Property CHROME readed successfully
-2024-01-22 09:58:42.150 INFO [main] [com.project.webdriverfactory.DriverManager.launchBrowser(DriverManager.java:44)] - driver is null and creating new driver instance
-2024-01-22 09:58:43.215 INFO [main] [com.project.webdriverfactory.DriverManager.launchBrowser(DriverManager.java:54)] - Launched chrome browser successfully
-2024-01-22 09:58:43.215 WARN [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:48)] - The data provider is not null and cannot create new instance
-2024-01-22 09:58:43.215 DEBUG [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:50)] - Property /src/test/resources/screenshots/ readed successfully
-2024-01-22 09:58:46.339 INFO [main] [com.project.utilities.WaitFactory.switchToIframeIfPresent(WaitFactory.java:47)] - No frame with the provided element Proxy element for: DefaultElementLocator 'By.xpath: //iframe[contains(@name,'notification-frame')]' is avaiable in the DOM: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for frame to be available: Proxy element for: DefaultElementLocator 'By.xpath: //iframe[contains(@name,'notification-frame')]' (tried for 3 second(s) with 500 milliseconds interval)
-2024-01-22 09:58:47.381 INFO [main] [com.project.utilities.WaitFactory.IsElementVisisbleAndClickable(WaitFactory.java:31)] - The element Proxy element for: DefaultElementLocator 'By.cssSelector: a.close' is not visible or clickable: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.cssSelector: a.close' (tried for 1 second(s) with 500 milliseconds interval)
-2024-01-22 09:58:47.381 INFO [main] [com.project.utilities.SupportFactory.checkAndCloseAddPopUp(SupportFactory.java:53)] - The add window is not present in the UI
-2024-01-22 09:58:47.381 WARN [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:48)] - The data provider is not null and cannot create new instance
-2024-01-22 09:58:47.381 DEBUG [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:50)] - Property https://www.makemytrip.com/ readed successfully
-2024-01-22 09:58:49.477 INFO [main] [com.project.webdriverfactory.DriverManager.launchURL(DriverManager.java:93)] - Successfully navigated to the url https://www.makemytrip.com/
-2024-01-22 09:58:49.626 DEBUG [main] [test.project.stepdefinitions.FunctionalPageHeadersStepDef.userIsOnTheMakeMyTripLoginPage(FunctionalPageHeadersStepDef.java:25)] - Titles: expected - MakeMyTrip and actual - MakeMyTrip - #1 Travel Website 50% OFF on Hotels, Flights & Holiday
-2024-01-22 09:58:49.626 INFO [main] [test.project.stepdefinitions.FunctionalPageHeadersStepDef.userIsOnTheMakeMyTripLoginPage(FunctionalPageHeadersStepDef.java:27)] - The titles are equal
-2024-01-22 09:58:49.662 INFO [main] [com.project.pageobjects.appmodules.HomePage.verifyTripOptions(HomePage.java:74)] - The option value One Way is present in the homepage
-2024-01-22 09:58:49.674 INFO [main] [com.project.pageobjects.appmodules.HomePage.verifyTripOptions(HomePage.java:74)] - The option value Round Trip is present in the homepage
-2024-01-22 09:58:49.691 INFO [main] [com.project.pageobjects.appmodules.HomePage.verifyTripOptions(HomePage.java:74)] - The option value Multi City is present in the homepage
-2024-01-22 09:58:49.691 DEBUG [main] [com.project.pageobjects.appmodules.HomePage.selectTripOption(HomePage.java:87)] - The option is: One Way
-2024-01-22 09:58:49.793 INFO [main] [com.project.pageobjects.appmodules.HomePage.selectTripOption(HomePage.java:99)] - Clicked on the option One Way
-2024-01-22 09:58:49.793 DEBUG [main] [test.project.stepdefinitions.Hooks.tearDown(Hooks.java:37)] - executed scenario Verify the user can search for a one way flight and get the results, file:///C:/Users/Dhanesh%20M/Sruthi/SampleProject/src/test/resources/features/homepage.feature, status: PASSED
-2024-01-22 09:58:49.795 INFO [main] [com.project.webdriverfactory.DriverManager.quitDriver(DriverManager.java:71)] - Driver is not null, quitting the driver instances
-2024-01-22 09:58:49.970 INFO [main] [com.project.webdriverfactory.DriverManager.getDriver(DriverManager.java:34)] - Instantiating driver manager
-2024-01-22 09:58:49.981 WARN [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:48)] - The data provider is not null and cannot create new instance
-2024-01-22 09:58:49.981 DEBUG [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:50)] - Property CHROME readed successfully
-2024-01-22 09:58:49.981 INFO [main] [com.project.webdriverfactory.DriverManager.launchBrowser(DriverManager.java:44)] - driver is null and creating new driver instance
-2024-01-22 09:58:51.060 INFO [main] [com.project.webdriverfactory.DriverManager.launchBrowser(DriverManager.java:54)] - Launched chrome browser successfully
-2024-01-22 09:58:51.060 WARN [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:48)] - The data provider is not null and cannot create new instance
-2024-01-22 09:58:51.060 DEBUG [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:50)] - Property /src/test/resources/screenshots/ readed successfully
-2024-01-22 09:58:54.168 INFO [main] [com.project.utilities.WaitFactory.switchToIframeIfPresent(WaitFactory.java:47)] - No frame with the provided element Proxy element for: DefaultElementLocator 'By.xpath: //iframe[contains(@name,'notification-frame')]' is avaiable in the DOM: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for frame to be available: Proxy element for: DefaultElementLocator 'By.xpath: //iframe[contains(@name,'notification-frame')]' (tried for 3 second(s) with 500 milliseconds interval)
-2024-01-22 09:58:55.226 INFO [main] [com.project.utilities.WaitFactory.IsElementVisisbleAndClickable(WaitFactory.java:31)] - The element Proxy element for: DefaultElementLocator 'By.cssSelector: a.close' is not visible or clickable: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.cssSelector: a.close' (tried for 1 second(s) with 500 milliseconds interval)
-2024-01-22 09:58:55.226 INFO [main] [com.project.utilities.SupportFactory.checkAndCloseAddPopUp(SupportFactory.java:53)] - The add window is not present in the UI
-2024-01-22 09:58:55.226 WARN [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:48)] - The data provider is not null and cannot create new instance
-2024-01-22 09:58:55.226 DEBUG [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:50)] - Property https://www.makemytrip.com/ readed successfully
-2024-01-22 09:58:57.015 INFO [main] [com.project.webdriverfactory.DriverManager.launchURL(DriverManager.java:93)] - Successfully navigated to the url https://www.makemytrip.com/
-2024-01-22 09:58:57.332 DEBUG [main] [test.project.stepdefinitions.FunctionalPageHeadersStepDef.userIsOnTheMakeMyTripLoginPage(FunctionalPageHeadersStepDef.java:25)] - Titles: expected - MakeMyTrip and actual - MakeMyTrip - #1 Travel Website 50% OFF on Hotels, Flights & Holiday
-2024-01-22 09:58:57.332 INFO [main] [test.project.stepdefinitions.FunctionalPageHeadersStepDef.userIsOnTheMakeMyTripLoginPage(FunctionalPageHeadersStepDef.java:27)] - The titles are equal
-2024-01-22 09:58:57.400 INFO [main] [com.project.pageobjects.appmodules.HomePage.verifyTripOptions(HomePage.java:74)] - The option value One Way is present in the homepage
-2024-01-22 09:58:57.407 INFO [main] [com.project.pageobjects.appmodules.HomePage.verifyTripOptions(HomePage.java:74)] - The option value Round Trip is present in the homepage
-2024-01-22 09:58:57.430 INFO [main] [com.project.pageobjects.appmodules.HomePage.verifyTripOptions(HomePage.java:74)] - The option value Multi City is present in the homepage
-2024-01-22 09:58:57.441 DEBUG [main] [com.project.pageobjects.appmodules.HomePage.selectTripOption(HomePage.java:87)] - The option is: One Way
-2024-01-22 09:58:57.515 INFO [main] [com.project.pageobjects.appmodules.HomePage.selectTripOption(HomePage.java:99)] - Clicked on the option One Way
-2024-01-22 09:58:57.515 DEBUG [main] [test.project.stepdefinitions.Hooks.tearDown(Hooks.java:37)] - executed scenario Verify the user can search for a one way flight and get the results, file:///C:/Users/Dhanesh%20M/Sruthi/SampleProject/src/test/resources/features/homepage.feature, status: PASSED
-2024-01-22 09:58:57.515 INFO [main] [com.project.webdriverfactory.DriverManager.quitDriver(DriverManager.java:71)] - Driver is not null, quitting the driver instances
-2024-01-22 09:59:53.622 INFO [main] [com.project.webdriverfactory.DriverManager.getDriver(DriverManager.java:34)] - Instantiating driver manager
-2024-01-22 09:59:53.625 INFO [main] [com.project.utilities.DataProvider.<init>(DataProvider.java:29)] - Properties file loaded successfully
-2024-01-22 09:59:53.636 DEBUG [main] [com.project.utilities.DataProvider.<init>(DataProvider.java:30)] - Properties file loaded successfull [browser.name, browser.version, login.url, screenshot.dir.path]
-2024-01-22 09:59:53.636 DEBUG [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:50)] - Property CHROME readed successfully
-2024-01-22 09:59:53.638 INFO [main] [com.project.webdriverfactory.DriverManager.launchBrowser(DriverManager.java:44)] - driver is null and creating new driver instance
-2024-01-22 09:59:54.345 DEBUG [main] [io.netty.util.internal.logging.InternalLoggerFactory.useLog4J2LoggerFactory(InternalLoggerFactory.java:76)] - Using Log4J2 as the default logging framework
-2024-01-22 09:59:54.351 DEBUG [main] [io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:129)] - -Dio.netty.leakDetection.level: simple
-2024-01-22 09:59:54.352 DEBUG [main] [io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:130)] - -Dio.netty.leakDetection.targetRecords: 4
-2024-01-22 09:59:54.357 DEBUG [main] [io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:196)] - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@2d5f7182
-2024-01-22 09:59:54.387 DEBUG [main] [io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:497)] - -Dio.netty.noUnsafe: false
-2024-01-22 09:59:54.388 DEBUG [main] [io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:1001)] - Java version: 17
-2024-01-22 09:59:54.391 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:137)] - sun.misc.Unsafe.theUnsafe: available
-2024-01-22 09:59:54.393 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:161)] - sun.misc.Unsafe.copyMemory: available
-2024-01-22 09:59:54.395 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:193)] - sun.misc.Unsafe.storeFence: available
-2024-01-22 09:59:54.397 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:236)] - java.nio.Buffer.address: available
-2024-01-22 09:59:54.398 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:321)] - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
-2024-01-22 09:59:54.400 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:386)] - java.nio.Bits.unaligned: available, true
-2024-01-22 09:59:54.401 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:453)] - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @6fd02e5
-2024-01-22 09:59:54.402 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:483)] - java.nio.DirectByteBuffer.<init>(long, {int,long}): unavailable
-2024-01-22 09:59:54.402 DEBUG [main] [io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:1159)] - sun.misc.Unsafe: available
-2024-01-22 09:59:54.403 DEBUG [main] [io.netty.util.internal.PlatformDependent.estimateMaxDirectMemory(PlatformDependent.java:1270)] - maxDirectMemory: 4219469824 bytes (maybe)
-2024-01-22 09:59:54.403 DEBUG [main] [io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1289)] - -Dio.netty.tmpdir: C:\Users\DHANES~1\AppData\Local\Temp (java.io.tmpdir)
-2024-01-22 09:59:54.403 DEBUG [main] [io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1368)] - -Dio.netty.bitMode: 64 (sun.arch.data.model)
-2024-01-22 09:59:54.404 DEBUG [main] [io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:1119)] - Platform: Windows
-2024-01-22 09:59:54.406 DEBUG [main] [io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:178)] - -Dio.netty.maxDirectMemory: -1 bytes
-2024-01-22 09:59:54.406 DEBUG [main] [io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:185)] - -Dio.netty.uninitializedArrayAllocationThreshold: -1
-2024-01-22 09:59:54.408 DEBUG [main] [io.netty.util.internal.CleanerJava9.<clinit>(CleanerJava9.java:71)] - java.nio.ByteBuffer.cleaner(): available
-2024-01-22 09:59:54.408 DEBUG [main] [io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:205)] - -Dio.netty.noPreferDirect: false
-2024-01-22 09:59:54.418 DEBUG [main] [io.netty.util.internal.PlatformDependent$Mpsc.<clinit>(PlatformDependent.java:1010)] - org.jctools-core.MpscChunkedArrayQueue: available
-2024-01-22 09:59:54.438 DEBUG [main] [io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:100)] - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
-2024-01-22 09:59:54.438 DEBUG [main] [io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:101)] - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
-2024-01-22 09:59:54.547 DEBUG [main] [io.netty.handler.ssl.JdkSslContext.<clinit>(JdkSslContext.java:83)] - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
-2024-01-22 09:59:54.547 DEBUG [main] [io.netty.handler.ssl.JdkSslContext.<clinit>(JdkSslContext.java:84)] - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
-2024-01-22 09:59:54.560 DEBUG [main] [io.netty.util.concurrent.GlobalEventExecutor.<clinit>(GlobalEventExecutor.java:53)] - -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
-2024-01-22 09:59:54.577 DEBUG [main] [io.netty.channel.MultithreadEventLoopGroup.<clinit>(MultithreadEventLoopGroup.java:44)] - -Dio.netty.eventLoopThreads: 24
-2024-01-22 09:59:54.591 DEBUG [main] [io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:110)] - -Dio.netty.noKeySetOptimization: false
-2024-01-22 09:59:54.591 DEBUG [main] [io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:111)] - -Dio.netty.selectorAutoRebuildThreshold: 512
-2024-01-22 09:59:54.683 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:157)] - -Dio.netty.allocator.numHeapArenas: 24
-2024-01-22 09:59:54.683 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:158)] - -Dio.netty.allocator.numDirectArenas: 24
-2024-01-22 09:59:54.683 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:160)] - -Dio.netty.allocator.pageSize: 8192
-2024-01-22 09:59:54.684 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:165)] - -Dio.netty.allocator.maxOrder: 9
-2024-01-22 09:59:54.684 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:169)] - -Dio.netty.allocator.chunkSize: 4194304
-2024-01-22 09:59:54.684 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:170)] - -Dio.netty.allocator.smallCacheSize: 256
-2024-01-22 09:59:54.684 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:171)] - -Dio.netty.allocator.normalCacheSize: 64
-2024-01-22 09:59:54.684 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:172)] - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
-2024-01-22 09:59:54.686 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:173)] - -Dio.netty.allocator.cacheTrimInterval: 8192
-2024-01-22 09:59:54.686 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:174)] - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
-2024-01-22 09:59:54.686 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:175)] - -Dio.netty.allocator.useCacheForAllThreads: false
-2024-01-22 09:59:54.686 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:176)] - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
-2024-01-22 09:59:54.698 DEBUG [main] [io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:89)] - -Dio.netty.allocator.type: pooled
-2024-01-22 09:59:54.698 DEBUG [main] [io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:98)] - -Dio.netty.threadLocalDirectBufferSize: 0
-2024-01-22 09:59:54.698 DEBUG [main] [io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:101)] - -Dio.netty.maxThreadLocalCharBufferSize: 16384
-2024-01-22 09:59:54.966 DEBUG [Forwarding newSession on session null to remote] [io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:79)] - -Dio.netty.processId: 60892 (auto-detected)
-2024-01-22 09:59:54.970 DEBUG [Forwarding newSession on session null to remote] [io.netty.util.NetUtil.<clinit>(NetUtil.java:148)] - -Djava.net.preferIPv4Stack: false
-2024-01-22 09:59:54.970 DEBUG [Forwarding newSession on session null to remote] [io.netty.util.NetUtil.<clinit>(NetUtil.java:149)] - -Djava.net.preferIPv6Addresses: false
-2024-01-22 09:59:54.986 DEBUG [Forwarding newSession on session null to remote] [io.netty.util.NetUtilInitializations.determineLoopback(NetUtilInitializations.java:145)] - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
-2024-01-22 09:59:54.987 DEBUG [Forwarding newSession on session null to remote] [io.netty.util.NetUtil$SoMaxConnAction.run(NetUtil.java:206)] - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
-2024-01-22 09:59:55.034 DEBUG [Forwarding newSession on session null to remote] [io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:101)] - -Dio.netty.machineId: 00:50:56:ff:fe:c0:00:08 (auto-detected)
-2024-01-22 09:59:55.092 DEBUG [AsyncHttpClient-1-2] [io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:63)] - -Dio.netty.buffer.checkAccessible: true
-2024-01-22 09:59:55.093 DEBUG [AsyncHttpClient-1-2] [io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:64)] - -Dio.netty.buffer.checkBounds: true
-2024-01-22 09:59:55.094 DEBUG [AsyncHttpClient-1-2] [io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:196)] - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@6b36a145
-2024-01-22 09:59:55.129 DEBUG [AsyncHttpClient-1-2] [io.netty.util.Recycler.<clinit>(Recycler.java:96)] - -Dio.netty.recycler.maxCapacityPerThread: 4096
-2024-01-22 09:59:55.129 DEBUG [AsyncHttpClient-1-2] [io.netty.util.Recycler.<clinit>(Recycler.java:97)] - -Dio.netty.recycler.ratio: 8
-2024-01-22 09:59:55.129 DEBUG [AsyncHttpClient-1-2] [io.netty.util.Recycler.<clinit>(Recycler.java:98)] - -Dio.netty.recycler.chunkSize: 32
-2024-01-22 09:59:55.129 DEBUG [AsyncHttpClient-1-2] [io.netty.util.Recycler.<clinit>(Recycler.java:99)] - -Dio.netty.recycler.blocking: false
-2024-01-22 09:59:55.129 DEBUG [AsyncHttpClient-1-2] [io.netty.util.Recycler.<clinit>(Recycler.java:100)] - -Dio.netty.recycler.batchFastThreadLocalOnly: true
-2024-01-22 09:59:55.719 DEBUG [AsyncHttpClient-1-2] [io.netty.handler.codec.compression.Brotli.<clinit>(Brotli.java:38)] - brotli4j not in the classpath; Brotli support will be unavailable.
-2024-01-22 09:59:55.837 DEBUG [main] [io.netty.util.internal.ThreadLocalRandom.newSeed(ThreadLocalRandom.java:214)] - -Dio.netty.initialSeedUniquifier: 0xdf29d3c5fe478ba5
-2024-01-22 09:59:55.889 INFO [main] [com.project.webdriverfactory.DriverManager.launchBrowser(DriverManager.java:54)] - Launched chrome browser successfully
-2024-01-22 09:59:55.890 WARN [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:48)] - The data provider is not null and cannot create new instance
-2024-01-22 09:59:55.890 DEBUG [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:50)] - Property /src/test/resources/screenshots/ readed successfully
-2024-01-22 10:01:13.444 INFO [main] [com.project.webdriverfactory.DriverManager.getDriver(DriverManager.java:34)] - Instantiating driver manager
-2024-01-22 10:01:13.446 INFO [main] [com.project.utilities.DataProvider.<init>(DataProvider.java:29)] - Properties file loaded successfully
-2024-01-22 10:01:13.452 DEBUG [main] [com.project.utilities.DataProvider.<init>(DataProvider.java:30)] - Properties file loaded successfull [browser.name, browser.version, login.url, screenshot.dir.path]
-2024-01-22 10:01:13.453 DEBUG [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:50)] - Property CHROME readed successfully
-2024-01-22 10:01:13.453 INFO [main] [com.project.webdriverfactory.DriverManager.launchBrowser(DriverManager.java:44)] - driver is null and creating new driver instance
-2024-01-22 10:01:14.094 DEBUG [main] [io.netty.util.internal.logging.InternalLoggerFactory.useLog4J2LoggerFactory(InternalLoggerFactory.java:76)] - Using Log4J2 as the default logging framework
-2024-01-22 10:01:14.098 DEBUG [main] [io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:129)] - -Dio.netty.leakDetection.level: simple
-2024-01-22 10:01:14.098 DEBUG [main] [io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:130)] - -Dio.netty.leakDetection.targetRecords: 4
-2024-01-22 10:01:14.103 DEBUG [main] [io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:196)] - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@3e850122
-2024-01-22 10:01:14.126 DEBUG [main] [io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:497)] - -Dio.netty.noUnsafe: false
-2024-01-22 10:01:14.128 DEBUG [main] [io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:1001)] - Java version: 17
-2024-01-22 10:01:14.131 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:137)] - sun.misc.Unsafe.theUnsafe: available
-2024-01-22 10:01:14.133 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:161)] - sun.misc.Unsafe.copyMemory: available
-2024-01-22 10:01:14.135 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:193)] - sun.misc.Unsafe.storeFence: available
-2024-01-22 10:01:14.136 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:236)] - java.nio.Buffer.address: available
-2024-01-22 10:01:14.137 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:321)] - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
-2024-01-22 10:01:14.138 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:386)] - java.nio.Bits.unaligned: available, true
-2024-01-22 10:01:14.140 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:453)] - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @47089e5f
-2024-01-22 10:01:14.141 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:483)] - java.nio.DirectByteBuffer.<init>(long, {int,long}): unavailable
-2024-01-22 10:01:14.141 DEBUG [main] [io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:1159)] - sun.misc.Unsafe: available
-2024-01-22 10:01:14.142 DEBUG [main] [io.netty.util.internal.PlatformDependent.estimateMaxDirectMemory(PlatformDependent.java:1270)] - maxDirectMemory: 4219469824 bytes (maybe)
-2024-01-22 10:01:14.143 DEBUG [main] [io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1289)] - -Dio.netty.tmpdir: C:\Users\DHANES~1\AppData\Local\Temp (java.io.tmpdir)
-2024-01-22 10:01:14.143 DEBUG [main] [io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1368)] - -Dio.netty.bitMode: 64 (sun.arch.data.model)
-2024-01-22 10:01:14.144 DEBUG [main] [io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:1119)] - Platform: Windows
-2024-01-22 10:01:14.145 DEBUG [main] [io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:178)] - -Dio.netty.maxDirectMemory: -1 bytes
-2024-01-22 10:01:14.145 DEBUG [main] [io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:185)] - -Dio.netty.uninitializedArrayAllocationThreshold: -1
-2024-01-22 10:01:14.148 DEBUG [main] [io.netty.util.internal.CleanerJava9.<clinit>(CleanerJava9.java:71)] - java.nio.ByteBuffer.cleaner(): available
-2024-01-22 10:01:14.148 DEBUG [main] [io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:205)] - -Dio.netty.noPreferDirect: false
-2024-01-22 10:01:14.155 DEBUG [main] [io.netty.util.internal.PlatformDependent$Mpsc.<clinit>(PlatformDependent.java:1010)] - org.jctools-core.MpscChunkedArrayQueue: available
-2024-01-22 10:01:14.173 DEBUG [main] [io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:100)] - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
-2024-01-22 10:01:14.174 DEBUG [main] [io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:101)] - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
-2024-01-22 10:01:14.292 DEBUG [main] [io.netty.handler.ssl.JdkSslContext.<clinit>(JdkSslContext.java:83)] - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
-2024-01-22 10:01:14.292 DEBUG [main] [io.netty.handler.ssl.JdkSslContext.<clinit>(JdkSslContext.java:84)] - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
-2024-01-22 10:01:14.301 DEBUG [main] [io.netty.util.concurrent.GlobalEventExecutor.<clinit>(GlobalEventExecutor.java:53)] - -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
-2024-01-22 10:01:14.309 DEBUG [main] [io.netty.channel.MultithreadEventLoopGroup.<clinit>(MultithreadEventLoopGroup.java:44)] - -Dio.netty.eventLoopThreads: 24
-2024-01-22 10:01:14.315 DEBUG [main] [io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:110)] - -Dio.netty.noKeySetOptimization: false
-2024-01-22 10:01:14.316 DEBUG [main] [io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:111)] - -Dio.netty.selectorAutoRebuildThreshold: 512
-2024-01-22 10:01:14.351 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:157)] - -Dio.netty.allocator.numHeapArenas: 24
-2024-01-22 10:01:14.352 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:158)] - -Dio.netty.allocator.numDirectArenas: 24
-2024-01-22 10:01:14.352 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:160)] - -Dio.netty.allocator.pageSize: 8192
-2024-01-22 10:01:14.352 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:165)] - -Dio.netty.allocator.maxOrder: 9
-2024-01-22 10:01:14.352 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:169)] - -Dio.netty.allocator.chunkSize: 4194304
-2024-01-22 10:01:14.354 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:170)] - -Dio.netty.allocator.smallCacheSize: 256
-2024-01-22 10:01:14.354 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:171)] - -Dio.netty.allocator.normalCacheSize: 64
-2024-01-22 10:01:14.354 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:172)] - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
-2024-01-22 10:01:14.354 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:173)] - -Dio.netty.allocator.cacheTrimInterval: 8192
-2024-01-22 10:01:14.354 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:174)] - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
-2024-01-22 10:01:14.355 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:175)] - -Dio.netty.allocator.useCacheForAllThreads: false
-2024-01-22 10:01:14.355 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:176)] - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
-2024-01-22 10:01:14.367 DEBUG [main] [io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:89)] - -Dio.netty.allocator.type: pooled
-2024-01-22 10:01:14.368 DEBUG [main] [io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:98)] - -Dio.netty.threadLocalDirectBufferSize: 0
-2024-01-22 10:01:14.368 DEBUG [main] [io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:101)] - -Dio.netty.maxThreadLocalCharBufferSize: 16384
-2024-01-22 10:01:14.589 DEBUG [Forwarding newSession on session null to remote] [io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:79)] - -Dio.netty.processId: 111964 (auto-detected)
-2024-01-22 10:01:14.590 DEBUG [Forwarding newSession on session null to remote] [io.netty.util.NetUtil.<clinit>(NetUtil.java:148)] - -Djava.net.preferIPv4Stack: false
-2024-01-22 10:01:14.590 DEBUG [Forwarding newSession on session null to remote] [io.netty.util.NetUtil.<clinit>(NetUtil.java:149)] - -Djava.net.preferIPv6Addresses: false
-2024-01-22 10:01:14.599 DEBUG [Forwarding newSession on session null to remote] [io.netty.util.NetUtilInitializations.determineLoopback(NetUtilInitializations.java:145)] - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
-2024-01-22 10:01:14.601 DEBUG [Forwarding newSession on session null to remote] [io.netty.util.NetUtil$SoMaxConnAction.run(NetUtil.java:206)] - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
-2024-01-22 10:01:14.630 DEBUG [Forwarding newSession on session null to remote] [io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:101)] - -Dio.netty.machineId: 00:50:56:ff:fe:c0:00:08 (auto-detected)
-2024-01-22 10:01:14.658 DEBUG [AsyncHttpClient-1-2] [io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:63)] - -Dio.netty.buffer.checkAccessible: true
-2024-01-22 10:01:14.660 DEBUG [AsyncHttpClient-1-2] [io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:64)] - -Dio.netty.buffer.checkBounds: true
-2024-01-22 10:01:14.660 DEBUG [AsyncHttpClient-1-2] [io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:196)] - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@59f85776
-2024-01-22 10:01:14.680 DEBUG [AsyncHttpClient-1-2] [io.netty.util.Recycler.<clinit>(Recycler.java:96)] - -Dio.netty.recycler.maxCapacityPerThread: 4096
-2024-01-22 10:01:14.680 DEBUG [AsyncHttpClient-1-2] [io.netty.util.Recycler.<clinit>(Recycler.java:97)] - -Dio.netty.recycler.ratio: 8
-2024-01-22 10:01:14.680 DEBUG [AsyncHttpClient-1-2] [io.netty.util.Recycler.<clinit>(Recycler.java:98)] - -Dio.netty.recycler.chunkSize: 32
-2024-01-22 10:01:14.680 DEBUG [AsyncHttpClient-1-2] [io.netty.util.Recycler.<clinit>(Recycler.java:99)] - -Dio.netty.recycler.blocking: false
-2024-01-22 10:01:14.680 DEBUG [AsyncHttpClient-1-2] [io.netty.util.Recycler.<clinit>(Recycler.java:100)] - -Dio.netty.recycler.batchFastThreadLocalOnly: true
-2024-01-22 10:01:15.227 DEBUG [AsyncHttpClient-1-2] [io.netty.handler.codec.compression.Brotli.<clinit>(Brotli.java:38)] - brotli4j not in the classpath; Brotli support will be unavailable.
-2024-01-22 10:01:15.306 DEBUG [main] [io.netty.util.internal.ThreadLocalRandom.newSeed(ThreadLocalRandom.java:214)] - -Dio.netty.initialSeedUniquifier: 0x048c80a215655c72
-2024-01-22 10:01:15.341 INFO [main] [com.project.webdriverfactory.DriverManager.launchBrowser(DriverManager.java:54)] - Launched chrome browser successfully
-2024-01-22 10:01:15.341 WARN [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:48)] - The data provider is not null and cannot create new instance
-2024-01-22 10:01:15.341 DEBUG [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:50)] - Property /src/test/resources/screenshots/ readed successfully
-2024-01-22 10:01:15.356 WARN [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:48)] - The data provider is not null and cannot create new instance
-2024-01-22 10:01:15.356 DEBUG [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:50)] - Property https://www.makemytrip.com/ readed successfully
-2024-01-22 10:01:18.247 INFO [main] [com.project.webdriverfactory.DriverManager.launchURL(DriverManager.java:93)] - Successfully navigated to the url https://www.makemytrip.com/
-2024-01-22 10:01:18.476 INFO [main] [com.project.utilities.WaitFactory.switchToIframeIfPresent(WaitFactory.java:43)] - Waited until the frame is present in the UI Proxy element for: DefaultElementLocator 'By.xpath: //iframe[contains(@name,'notification-frame')]'
-2024-01-22 10:01:18.562 INFO [main] [com.project.utilities.WaitFactory.IsElementVisisbleAndClickable(WaitFactory.java:27)] - Waited until the element [[ChromeDriver: chrome on windows (c527cbcb9f9cc8e7614747c7782d5c31)] -> css selector: a.close] is clickable
-2024-01-22 10:01:18.669 INFO [main] [com.project.utilities.SupportFactory.checkAndCloseAddPopUp(SupportFactory.java:49)] - Successfully clicked on the add close button
-2024-01-22 10:01:18.694 DEBUG [main] [test.project.stepdefinitions.FunctionalPageHeadersStepDef.userIsOnTheMakeMyTripLoginPage(FunctionalPageHeadersStepDef.java:25)] - Titles: expected - MakeMyTrip and actual - MakeMyTrip - #1 Travel Website 50% OFF on Hotels, Flights & Holiday
-2024-01-22 10:01:18.696 INFO [main] [test.project.stepdefinitions.FunctionalPageHeadersStepDef.userIsOnTheMakeMyTripLoginPage(FunctionalPageHeadersStepDef.java:27)] - The titles are equal
-2024-01-22 10:01:18.731 INFO [main] [test.project.stepdefinitions.FunctionalPageHeadersStepDef.userIsAbleToSeeTheMakeMyTripLogoIcon(FunctionalPageHeadersStepDef.java:34)] - The logo is present in the home page
-2024-01-22 10:01:18.783 INFO [main] [com.project.pageobjects.appmodules.HomePage.verifyFunctionalHeaders(HomePage.java:49)] - The header value Flights is present in the homepage
-2024-01-22 10:01:18.811 INFO [main] [com.project.pageobjects.appmodules.HomePage.verifyFunctionalHeaders(HomePage.java:49)] - The header value Hotels is present in the homepage
-2024-01-22 10:01:18.832 INFO [main] [com.project.pageobjects.appmodules.HomePage.verifyFunctionalHeaders(HomePage.java:49)] - The header value Homestays & Villas is present in the homepage
-2024-01-22 10:01:18.854 INFO [main] [com.project.pageobjects.appmodules.HomePage.verifyFunctionalHeaders(HomePage.java:49)] - The header value Holiday Packages is present in the homepage
-2024-01-22 10:01:18.879 INFO [main] [com.project.pageobjects.appmodules.HomePage.verifyFunctionalHeaders(HomePage.java:49)] - The header value Trains is present in the homepage
-2024-01-22 10:01:18.907 INFO [main] [com.project.pageobjects.appmodules.HomePage.verifyFunctionalHeaders(HomePage.java:49)] - The header value Buses is present in the homepage
-2024-01-22 10:01:18.931 INFO [main] [com.project.pageobjects.appmodules.HomePage.verifyFunctionalHeaders(HomePage.java:49)] - The header value Cabs is present in the homepage
-2024-01-22 10:01:18.957 INFO [main] [com.project.pageobjects.appmodules.HomePage.verifyFunctionalHeaders(HomePage.java:49)] - The header value Forex Card & Currency is present in the homepage
-2024-01-22 10:01:18.982 INFO [main] [com.project.pageobjects.appmodules.HomePage.verifyFunctionalHeaders(HomePage.java:49)] - The header value Travel Insurance is present in the homepage
-2024-01-22 10:01:18.987 DEBUG [main] [test.project.stepdefinitions.Hooks.tearDown(Hooks.java:37)] - executed scenario Verify the user can view all the functional page headers, file:///C:/Users/Dhanesh%20M/Sruthi/SampleProject/src/test/resources/features/homepage.feature, status: PASSED
-2024-01-22 10:01:18.987 INFO [main] [com.project.webdriverfactory.DriverManager.quitDriver(DriverManager.java:71)] - Driver is not null, quitting the driver instances
-2024-01-22 10:01:19.249 INFO [main] [com.project.webdriverfactory.DriverManager.getDriver(DriverManager.java:34)] - Instantiating driver manager
-2024-01-22 10:01:19.250 WARN [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:48)] - The data provider is not null and cannot create new instance
-2024-01-22 10:01:19.250 DEBUG [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:50)] - Property CHROME readed successfully
-2024-01-22 10:01:19.250 INFO [main] [com.project.webdriverfactory.DriverManager.launchBrowser(DriverManager.java:44)] - driver is null and creating new driver instance
-2024-01-22 10:01:20.250 INFO [main] [com.project.webdriverfactory.DriverManager.launchBrowser(DriverManager.java:54)] - Launched chrome browser successfully
-2024-01-22 10:01:20.251 WARN [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:48)] - The data provider is not null and cannot create new instance
-2024-01-22 10:01:20.251 DEBUG [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:50)] - Property /src/test/resources/screenshots/ readed successfully
-2024-01-22 10:01:20.251 WARN [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:48)] - The data provider is not null and cannot create new instance
-2024-01-22 10:01:20.251 DEBUG [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:50)] - Property https://www.makemytrip.com/ readed successfully
-2024-01-22 10:01:22.552 INFO [main] [com.project.webdriverfactory.DriverManager.launchURL(DriverManager.java:93)] - Successfully navigated to the url https://www.makemytrip.com/
-2024-01-22 10:01:23.410 INFO [main] [com.project.utilities.WaitFactory.switchToIframeIfPresent(WaitFactory.java:43)] - Waited until the frame is present in the UI Proxy element for: DefaultElementLocator 'By.xpath: //iframe[contains(@name,'notification-frame')]'
-2024-01-22 10:01:23.465 INFO [main] [com.project.utilities.WaitFactory.IsElementVisisbleAndClickable(WaitFactory.java:27)] - Waited until the element [[ChromeDriver: chrome on windows (3093decfa67d1c678a9fbbb71c1e7e6d)] -> css selector: a.close] is clickable
-2024-01-22 10:01:23.557 INFO [main] [com.project.utilities.SupportFactory.checkAndCloseAddPopUp(SupportFactory.java:49)] - Successfully clicked on the add close button
-2024-01-22 10:01:23.571 DEBUG [main] [test.project.stepdefinitions.FunctionalPageHeadersStepDef.userIsOnTheMakeMyTripLoginPage(FunctionalPageHeadersStepDef.java:25)] - Titles: expected - MakeMyTrip and actual - MakeMyTrip - #1 Travel Website 50% OFF on Hotels, Flights & Holiday
-2024-01-22 10:01:23.571 INFO [main] [test.project.stepdefinitions.FunctionalPageHeadersStepDef.userIsOnTheMakeMyTripLoginPage(FunctionalPageHeadersStepDef.java:27)] - The titles are equal
-2024-01-22 10:01:23.613 INFO [main] [com.project.pageobjects.appmodules.HomePage.verifyTripOptions(HomePage.java:74)] - The option value One Way is present in the homepage
-2024-01-22 10:01:23.638 INFO [main] [com.project.pageobjects.appmodules.HomePage.verifyTripOptions(HomePage.java:74)] - The option value Round Trip is present in the homepage
-2024-01-22 10:01:23.661 INFO [main] [com.project.pageobjects.appmodules.HomePage.verifyTripOptions(HomePage.java:74)] - The option value Multi City is present in the homepage
-2024-01-22 10:01:23.684 DEBUG [main] [com.project.pageobjects.appmodules.HomePage.selectTripOption(HomePage.java:87)] - The option is: One Way
-2024-01-22 10:01:24.631 INFO [main] [com.project.pageobjects.appmodules.HomePage.selectTripOption(HomePage.java:99)] - Clicked on the option One Way
-2024-01-22 10:01:24.632 DEBUG [main] [test.project.stepdefinitions.Hooks.tearDown(Hooks.java:37)] - executed scenario Verify the user can search for a one way flight and get the results, file:///C:/Users/Dhanesh%20M/Sruthi/SampleProject/src/test/resources/features/homepage.feature, status: PASSED
-2024-01-22 10:01:24.634 INFO [main] [com.project.webdriverfactory.DriverManager.quitDriver(DriverManager.java:71)] - Driver is not null, quitting the driver instances
-2024-01-22 10:01:24.829 INFO [main] [com.project.webdriverfactory.DriverManager.getDriver(DriverManager.java:34)] - Instantiating driver manager
-2024-01-22 10:01:24.829 WARN [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:48)] - The data provider is not null and cannot create new instance
-2024-01-22 10:01:24.829 DEBUG [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:50)] - Property CHROME readed successfully
-2024-01-22 10:01:24.829 INFO [main] [com.project.webdriverfactory.DriverManager.launchBrowser(DriverManager.java:44)] - driver is null and creating new driver instance
-2024-01-22 10:01:25.927 INFO [main] [com.project.webdriverfactory.DriverManager.launchBrowser(DriverManager.java:54)] - Launched chrome browser successfully
-2024-01-22 10:01:25.927 WARN [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:48)] - The data provider is not null and cannot create new instance
-2024-01-22 10:01:25.927 DEBUG [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:50)] - Property /src/test/resources/screenshots/ readed successfully
-2024-01-22 10:01:25.928 WARN [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:48)] - The data provider is not null and cannot create new instance
-2024-01-22 10:01:25.928 DEBUG [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:50)] - Property https://www.makemytrip.com/ readed successfully
-2024-01-22 10:01:28.267 INFO [main] [com.project.webdriverfactory.DriverManager.launchURL(DriverManager.java:93)] - Successfully navigated to the url https://www.makemytrip.com/
-2024-01-22 10:01:28.983 INFO [main] [com.project.utilities.WaitFactory.switchToIframeIfPresent(WaitFactory.java:43)] - Waited until the frame is present in the UI Proxy element for: DefaultElementLocator 'By.xpath: //iframe[contains(@name,'notification-frame')]'
-2024-01-22 10:01:29.048 INFO [main] [com.project.utilities.WaitFactory.IsElementVisisbleAndClickable(WaitFactory.java:27)] - Waited until the element [[ChromeDriver: chrome on windows (20b7fbfb89b8da330b59dd0529509ff3)] -> css selector: a.close] is clickable
-2024-01-22 10:01:29.135 INFO [main] [com.project.utilities.SupportFactory.checkAndCloseAddPopUp(SupportFactory.java:49)] - Successfully clicked on the add close button
-2024-01-22 10:01:29.147 DEBUG [main] [test.project.stepdefinitions.FunctionalPageHeadersStepDef.userIsOnTheMakeMyTripLoginPage(FunctionalPageHeadersStepDef.java:25)] - Titles: expected - MakeMyTrip and actual - MakeMyTrip - #1 Travel Website 50% OFF on Hotels, Flights & Holiday
-2024-01-22 10:01:29.147 INFO [main] [test.project.stepdefinitions.FunctionalPageHeadersStepDef.userIsOnTheMakeMyTripLoginPage(FunctionalPageHeadersStepDef.java:27)] - The titles are equal
-2024-01-22 10:01:29.183 INFO [main] [com.project.pageobjects.appmodules.HomePage.verifyTripOptions(HomePage.java:74)] - The option value One Way is present in the homepage
-2024-01-22 10:01:29.203 INFO [main] [com.project.pageobjects.appmodules.HomePage.verifyTripOptions(HomePage.java:74)] - The option value Round Trip is present in the homepage
-2024-01-22 10:01:29.234 INFO [main] [com.project.pageobjects.appmodules.HomePage.verifyTripOptions(HomePage.java:74)] - The option value Multi City is present in the homepage
-2024-01-22 10:01:29.262 DEBUG [main] [com.project.pageobjects.appmodules.HomePage.selectTripOption(HomePage.java:87)] - The option is: One Way
-2024-01-22 10:01:30.211 INFO [main] [com.project.pageobjects.appmodules.HomePage.selectTripOption(HomePage.java:99)] - Clicked on the option One Way
-2024-01-22 10:01:30.212 DEBUG [main] [test.project.stepdefinitions.Hooks.tearDown(Hooks.java:37)] - executed scenario Verify the user can search for a one way flight and get the results, file:///C:/Users/Dhanesh%20M/Sruthi/SampleProject/src/test/resources/features/homepage.feature, status: PASSED
-2024-01-22 10:01:30.213 INFO [main] [com.project.webdriverfactory.DriverManager.quitDriver(DriverManager.java:71)] - Driver is not null, quitting the driver instances
-2024-01-22 10:01:30.424 INFO [main] [com.project.webdriverfactory.DriverManager.getDriver(DriverManager.java:34)] - Instantiating driver manager
-2024-01-22 10:01:30.424 WARN [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:48)] - The data provider is not null and cannot create new instance
-2024-01-22 10:01:30.424 DEBUG [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:50)] - Property CHROME readed successfully
-2024-01-22 10:01:30.424 INFO [main] [com.project.webdriverfactory.DriverManager.launchBrowser(DriverManager.java:44)] - driver is null and creating new driver instance
-2024-01-22 10:01:31.494 INFO [main] [com.project.webdriverfactory.DriverManager.launchBrowser(DriverManager.java:54)] - Launched chrome browser successfully
-2024-01-22 10:01:31.494 WARN [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:48)] - The data provider is not null and cannot create new instance
-2024-01-22 10:01:31.494 DEBUG [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:50)] - Property /src/test/resources/screenshots/ readed successfully
-2024-01-22 10:01:31.494 WARN [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:48)] - The data provider is not null and cannot create new instance
-2024-01-22 10:01:31.495 DEBUG [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:50)] - Property https://www.makemytrip.com/ readed successfully
-2024-01-22 10:01:34.239 INFO [main] [com.project.webdriverfactory.DriverManager.launchURL(DriverManager.java:93)] - Successfully navigated to the url https://www.makemytrip.com/
-2024-01-22 10:01:34.951 INFO [main] [com.project.utilities.WaitFactory.switchToIframeIfPresent(WaitFactory.java:43)] - Waited until the frame is present in the UI Proxy element for: DefaultElementLocator 'By.xpath: //iframe[contains(@name,'notification-frame')]'
-2024-01-22 10:01:35.031 INFO [main] [com.project.utilities.WaitFactory.IsElementVisisbleAndClickable(WaitFactory.java:27)] - Waited until the element [[ChromeDriver: chrome on windows (480cd2eb3c403b659d100abe49183aa7)] -> css selector: a.close] is clickable
-2024-01-22 10:01:35.133 INFO [main] [com.project.utilities.SupportFactory.checkAndCloseAddPopUp(SupportFactory.java:49)] - Successfully clicked on the add close button
-2024-01-22 10:01:35.144 DEBUG [main] [test.project.stepdefinitions.FunctionalPageHeadersStepDef.userIsOnTheMakeMyTripLoginPage(FunctionalPageHeadersStepDef.java:25)] - Titles: expected - MakeMyTrip and actual - MakeMyTrip - #1 Travel Website 50% OFF on Hotels, Flights & Holiday
-2024-01-22 10:01:35.145 INFO [main] [test.project.stepdefinitions.FunctionalPageHeadersStepDef.userIsOnTheMakeMyTripLoginPage(FunctionalPageHeadersStepDef.java:27)] - The titles are equal
-2024-01-22 10:01:35.181 INFO [main] [com.project.pageobjects.appmodules.HomePage.verifyTripOptions(HomePage.java:74)] - The option value One Way is present in the homepage
-2024-01-22 10:01:35.208 INFO [main] [com.project.pageobjects.appmodules.HomePage.verifyTripOptions(HomePage.java:74)] - The option value Round Trip is present in the homepage
-2024-01-22 10:01:35.229 INFO [main] [com.project.pageobjects.appmodules.HomePage.verifyTripOptions(HomePage.java:74)] - The option value Multi City is present in the homepage
-2024-01-22 10:01:35.250 DEBUG [main] [com.project.pageobjects.appmodules.HomePage.selectTripOption(HomePage.java:87)] - The option is: One Way
-2024-01-22 10:01:36.219 INFO [main] [com.project.pageobjects.appmodules.HomePage.selectTripOption(HomePage.java:99)] - Clicked on the option One Way
-2024-01-22 10:01:36.219 DEBUG [main] [test.project.stepdefinitions.Hooks.tearDown(Hooks.java:37)] - executed scenario Verify the user can search for a one way flight and get the results, file:///C:/Users/Dhanesh%20M/Sruthi/SampleProject/src/test/resources/features/homepage.feature, status: PASSED
-2024-01-22 10:01:36.220 INFO [main] [com.project.webdriverfactory.DriverManager.quitDriver(DriverManager.java:71)] - Driver is not null, quitting the driver instances
+2024-01-29 08:32:27.365 INFO [main] [com.project.webdriverfactory.DriverManager.getDriver(DriverManager.java:34)] - Instantiating driver manager
+2024-01-29 08:32:27.375 INFO [main] [com.project.utilities.DataProvider.<init>(DataProvider.java:29)] - Properties file loaded successfully
+2024-01-29 08:32:27.384 DEBUG [main] [com.project.utilities.DataProvider.<init>(DataProvider.java:30)] - Properties file loaded successfull [browser.name, browser.version, driver.thread.safe, browser.mode.headless, login.url, screenshot.dir.path]
+2024-01-29 08:32:27.386 DEBUG [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:50)] - Property CHROME readed successfully
+2024-01-29 08:32:27.387 WARN [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:48)] - The data provider is not null and cannot create new instance
+2024-01-29 08:32:27.387 DEBUG [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:50)] - Property false readed successfully
+2024-01-29 08:32:27.388 INFO [main] [com.project.webdriverfactory.DriverManager.launchBrowser(DriverManager.java:44)] - driver is null and creating new driver instance
+2024-01-29 08:32:29.815 DEBUG [main] [io.netty.util.internal.logging.InternalLoggerFactory.useLog4J2LoggerFactory(InternalLoggerFactory.java:76)] - Using Log4J2 as the default logging framework
+2024-01-29 08:32:29.821 DEBUG [main] [io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:129)] - -Dio.netty.leakDetection.level: simple
+2024-01-29 08:32:29.822 DEBUG [main] [io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:130)] - -Dio.netty.leakDetection.targetRecords: 4
+2024-01-29 08:32:29.830 DEBUG [main] [io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:196)] - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@79ab34c1
+2024-01-29 08:32:29.858 DEBUG [main] [io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:497)] - -Dio.netty.noUnsafe: false
+2024-01-29 08:32:29.860 DEBUG [main] [io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:1001)] - Java version: 17
+2024-01-29 08:32:29.863 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:137)] - sun.misc.Unsafe.theUnsafe: available
+2024-01-29 08:32:29.864 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:161)] - sun.misc.Unsafe.copyMemory: available
+2024-01-29 08:32:29.865 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:193)] - sun.misc.Unsafe.storeFence: available
+2024-01-29 08:32:29.867 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:236)] - java.nio.Buffer.address: available
+2024-01-29 08:32:29.868 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:321)] - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+2024-01-29 08:32:29.869 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:386)] - java.nio.Bits.unaligned: available, true
+2024-01-29 08:32:29.870 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:453)] - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @47089e5f
+2024-01-29 08:32:29.873 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:483)] - java.nio.DirectByteBuffer.<init>(long, {int,long}): unavailable
+2024-01-29 08:32:29.873 DEBUG [main] [io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:1159)] - sun.misc.Unsafe: available
+2024-01-29 08:32:29.874 DEBUG [main] [io.netty.util.internal.PlatformDependent.estimateMaxDirectMemory(PlatformDependent.java:1270)] - maxDirectMemory: 4219469824 bytes (maybe)
+2024-01-29 08:32:29.874 DEBUG [main] [io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1289)] - -Dio.netty.tmpdir: C:\Users\DHANES~1\AppData\Local\Temp (java.io.tmpdir)
+2024-01-29 08:32:29.875 DEBUG [main] [io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1368)] - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2024-01-29 08:32:29.875 DEBUG [main] [io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:1119)] - Platform: Windows
+2024-01-29 08:32:29.877 DEBUG [main] [io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:178)] - -Dio.netty.maxDirectMemory: -1 bytes
+2024-01-29 08:32:29.877 DEBUG [main] [io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:185)] - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2024-01-29 08:32:29.878 DEBUG [main] [io.netty.util.internal.CleanerJava9.<clinit>(CleanerJava9.java:71)] - java.nio.ByteBuffer.cleaner(): available
+2024-01-29 08:32:29.879 DEBUG [main] [io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:205)] - -Dio.netty.noPreferDirect: false
+2024-01-29 08:32:29.886 DEBUG [main] [io.netty.util.internal.PlatformDependent$Mpsc.<clinit>(PlatformDependent.java:1010)] - org.jctools-core.MpscChunkedArrayQueue: available
+2024-01-29 08:32:29.910 DEBUG [main] [io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:100)] - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2024-01-29 08:32:29.911 DEBUG [main] [io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:101)] - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2024-01-29 08:32:30.144 DEBUG [main] [io.netty.handler.ssl.JdkSslContext.<clinit>(JdkSslContext.java:83)] - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+2024-01-29 08:32:30.144 DEBUG [main] [io.netty.handler.ssl.JdkSslContext.<clinit>(JdkSslContext.java:84)] - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+2024-01-29 08:32:30.160 DEBUG [main] [io.netty.util.concurrent.GlobalEventExecutor.<clinit>(GlobalEventExecutor.java:53)] - -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+2024-01-29 08:32:30.197 DEBUG [main] [io.netty.channel.MultithreadEventLoopGroup.<clinit>(MultithreadEventLoopGroup.java:44)] - -Dio.netty.eventLoopThreads: 24
+2024-01-29 08:32:30.218 DEBUG [main] [io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:110)] - -Dio.netty.noKeySetOptimization: false
+2024-01-29 08:32:30.219 DEBUG [main] [io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:111)] - -Dio.netty.selectorAutoRebuildThreshold: 512
+2024-01-29 08:32:30.312 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:157)] - -Dio.netty.allocator.numHeapArenas: 24
+2024-01-29 08:32:30.312 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:158)] - -Dio.netty.allocator.numDirectArenas: 24
+2024-01-29 08:32:30.313 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:160)] - -Dio.netty.allocator.pageSize: 8192
+2024-01-29 08:32:30.315 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:165)] - -Dio.netty.allocator.maxOrder: 9
+2024-01-29 08:32:30.316 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:169)] - -Dio.netty.allocator.chunkSize: 4194304
+2024-01-29 08:32:30.316 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:170)] - -Dio.netty.allocator.smallCacheSize: 256
+2024-01-29 08:32:30.317 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:171)] - -Dio.netty.allocator.normalCacheSize: 64
+2024-01-29 08:32:30.317 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:172)] - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2024-01-29 08:32:30.317 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:173)] - -Dio.netty.allocator.cacheTrimInterval: 8192
+2024-01-29 08:32:30.317 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:174)] - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2024-01-29 08:32:30.317 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:175)] - -Dio.netty.allocator.useCacheForAllThreads: false
+2024-01-29 08:32:30.318 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:176)] - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2024-01-29 08:32:30.333 DEBUG [main] [io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:89)] - -Dio.netty.allocator.type: pooled
+2024-01-29 08:32:30.334 DEBUG [main] [io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:98)] - -Dio.netty.threadLocalDirectBufferSize: 0
+2024-01-29 08:32:30.335 DEBUG [main] [io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:101)] - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2024-01-29 08:32:30.971 DEBUG [Forwarding newSession on session null to remote] [io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:79)] - -Dio.netty.processId: 121072 (auto-detected)
+2024-01-29 08:32:30.974 DEBUG [Forwarding newSession on session null to remote] [io.netty.util.NetUtil.<clinit>(NetUtil.java:148)] - -Djava.net.preferIPv4Stack: false
+2024-01-29 08:32:30.975 DEBUG [Forwarding newSession on session null to remote] [io.netty.util.NetUtil.<clinit>(NetUtil.java:149)] - -Djava.net.preferIPv6Addresses: false
+2024-01-29 08:32:30.986 DEBUG [Forwarding newSession on session null to remote] [io.netty.util.NetUtilInitializations.determineLoopback(NetUtilInitializations.java:145)] - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2024-01-29 08:32:30.987 DEBUG [Forwarding newSession on session null to remote] [io.netty.util.NetUtil$SoMaxConnAction.run(NetUtil.java:206)] - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2024-01-29 08:32:31.029 DEBUG [Forwarding newSession on session null to remote] [io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:101)] - -Dio.netty.machineId: 00:50:56:ff:fe:c0:00:08 (auto-detected)
+2024-01-29 08:32:31.082 DEBUG [AsyncHttpClient-1-2] [io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:63)] - -Dio.netty.buffer.checkAccessible: true
+2024-01-29 08:32:31.083 DEBUG [AsyncHttpClient-1-2] [io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:64)] - -Dio.netty.buffer.checkBounds: true
+2024-01-29 08:32:31.084 DEBUG [AsyncHttpClient-1-2] [io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:196)] - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@689c6337
+2024-01-29 08:32:31.128 DEBUG [AsyncHttpClient-1-2] [io.netty.util.Recycler.<clinit>(Recycler.java:96)] - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2024-01-29 08:32:31.128 DEBUG [AsyncHttpClient-1-2] [io.netty.util.Recycler.<clinit>(Recycler.java:97)] - -Dio.netty.recycler.ratio: 8
+2024-01-29 08:32:31.128 DEBUG [AsyncHttpClient-1-2] [io.netty.util.Recycler.<clinit>(Recycler.java:98)] - -Dio.netty.recycler.chunkSize: 32
+2024-01-29 08:32:31.128 DEBUG [AsyncHttpClient-1-2] [io.netty.util.Recycler.<clinit>(Recycler.java:99)] - -Dio.netty.recycler.blocking: false
+2024-01-29 08:32:31.128 DEBUG [AsyncHttpClient-1-2] [io.netty.util.Recycler.<clinit>(Recycler.java:100)] - -Dio.netty.recycler.batchFastThreadLocalOnly: true
+2024-01-29 08:32:32.199 DEBUG [AsyncHttpClient-1-2] [io.netty.handler.codec.compression.Brotli.<clinit>(Brotli.java:38)] - brotli4j not in the classpath; Brotli support will be unavailable.
+2024-01-29 08:32:32.298 DEBUG [main] [io.netty.util.internal.ThreadLocalRandom.newSeed(ThreadLocalRandom.java:214)] - -Dio.netty.initialSeedUniquifier: 0xbc422e13fbeeb0d2
+2024-01-29 08:32:32.375 INFO [main] [com.project.webdriverfactory.DriverManager.launchBrowser(DriverManager.java:56)] - Launched chrome browser successfully
+2024-01-29 08:32:32.375 WARN [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:48)] - The data provider is not null and cannot create new instance
+2024-01-29 08:32:32.376 DEBUG [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:50)] - Property /src/test/resources/screenshots/ readed successfully
+2024-01-29 08:32:32.402 WARN [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:48)] - The data provider is not null and cannot create new instance
+2024-01-29 08:32:32.402 DEBUG [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:50)] - Property true readed successfully
+2024-01-29 08:32:32.403 INFO [main] [com.project.webdriverfactory.ThreadManager.setDriverThreadSafe(ThreadManager.java:18)] - Executing with thread id 1
+2024-01-29 08:32:32.406 WARN [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:48)] - The data provider is not null and cannot create new instance
+2024-01-29 08:32:32.406 DEBUG [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:50)] - Property https://www.makemytrip.com/ readed successfully
+2024-01-29 08:32:36.416 INFO [main] [com.project.webdriverfactory.DriverManager.launchURL(DriverManager.java:93)] - Successfully navigated to the url https://www.makemytrip.com/
+2024-01-29 08:32:39.739 INFO [main] [com.project.utilities.WaitFactory.switchToIframeIfPresent(WaitFactory.java:48)] - No frame with the provided element Proxy element for: DefaultElementLocator 'By.xpath: //iframe[contains(@name,'notification-frame')]' is avaiable in the DOM: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for frame to be available: Proxy element for: DefaultElementLocator 'By.xpath: //iframe[contains(@name,'notification-frame')]' (tried for 3 second(s) with 500 milliseconds interval)
+2024-01-29 08:32:40.838 INFO [main] [com.project.utilities.WaitFactory.IsElementVisisbleAndClickable(WaitFactory.java:32)] - The element Proxy element for: DefaultElementLocator 'By.cssSelector: a.close' is not visible or clickable: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.cssSelector: a.close' (tried for 1 second(s) with 500 milliseconds interval)
+2024-01-29 08:32:40.839 INFO [main] [com.project.utilities.SupportFactory.checkAndCloseAddPopUp(SupportFactory.java:55)] - The add window is not present in the UI
+2024-01-29 08:32:40.851 WARN [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:48)] - The data provider is not null and cannot create new instance
+2024-01-29 08:32:40.853 DEBUG [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:50)] - Property /src/test/resources/screenshots/ readed successfully
+2024-01-29 08:32:40.861 DEBUG [main] [test.project.stepdefinitions.FunctionalPageHeadersStepDef.userIsOnTheMakeMyTripLoginPage(FunctionalPageHeadersStepDef.java:25)] - Titles: expected - MakeMyTrip and actual - MakeMyTrip - #1 Travel Website 50% OFF on Hotels, Flights & Holiday
+2024-01-29 08:32:40.867 INFO [main] [test.project.stepdefinitions.FunctionalPageHeadersStepDef.userIsOnTheMakeMyTripLoginPage(FunctionalPageHeadersStepDef.java:27)] - The titles are equal
+2024-01-29 08:32:40.874 WARN [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:48)] - The data provider is not null and cannot create new instance
+2024-01-29 08:32:40.874 DEBUG [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:50)] - Property /src/test/resources/screenshots/ readed successfully
+2024-01-29 08:32:40.938 INFO [main] [com.project.pageobjects.appmodules.HomePage.verifyTripOptions(HomePage.java:104)] - The option value One Way is present in the homepage
+2024-01-29 08:32:40.974 INFO [main] [com.project.pageobjects.appmodules.HomePage.verifyTripOptions(HomePage.java:104)] - The option value Round Trip is present in the homepage
+2024-01-29 08:32:40.995 INFO [main] [com.project.pageobjects.appmodules.HomePage.verifyTripOptions(HomePage.java:104)] - The option value Multi City is present in the homepage
+2024-01-29 08:32:41.020 DEBUG [main] [com.project.pageobjects.appmodules.HomePage.selectTripOption(HomePage.java:117)] - The option is: One Way
+2024-01-29 08:32:41.142 INFO [main] [com.project.pageobjects.appmodules.HomePage.selectTripOption(HomePage.java:129)] - Clicked on the option One Way
+2024-01-29 08:32:41.200 INFO [main] [com.project.utilities.WaitFactory.WaitForElementUntilClickable(WaitFactory.java:59)] - Waited until the element [[ChromeDriver: chrome on windows (44e05bfaf9402585893f651d37a12f5d)] -> xpath: //span[text()='From']] is clickable
+2024-01-29 08:32:41.339 INFO [main] [com.project.pageobjects.appmodules.HomePage.clickFlightSelectOption(HomePage.java:40)] - Successfully clicked on the flight search option From
+2024-01-29 08:32:41.426 INFO [main] [com.project.utilities.WaitFactory.WaitForElementUntilClickable(WaitFactory.java:59)] - Waited until the element [[ChromeDriver: chrome on windows (44e05bfaf9402585893f651d37a12f5d)] -> css selector: input[placeholder=From]] is clickable
+2024-01-29 08:32:42.606 INFO [main] [com.project.utilities.WaitFactory.isTextPresent(WaitFactory.java:75)] - Waited until the text Kochi is present
+2024-01-29 08:32:42.635 DEBUG [main] [com.project.pageobjects.appmodules.HomePage.enterFromToCity(HomePage.java:142)] - The first role option is Kochi, India
+2024-01-29 08:32:42.724 INFO [main] [com.project.pageobjects.appmodules.HomePage.enterFromToCity(HomePage.java:144)] - Selected the from city Kochi, India
+2024-01-29 08:32:42.762 INFO [main] [com.project.utilities.WaitFactory.WaitForElementUntilClickable(WaitFactory.java:59)] - Waited until the element [[ChromeDriver: chrome on windows (44e05bfaf9402585893f651d37a12f5d)] -> xpath: //span[text()='To']] is clickable
+2024-01-29 08:32:42.870 INFO [main] [com.project.pageobjects.appmodules.HomePage.clickFlightSelectOption(HomePage.java:40)] - Successfully clicked on the flight search option To
+2024-01-29 08:32:42.955 INFO [main] [com.project.utilities.WaitFactory.WaitForElementUntilClickable(WaitFactory.java:59)] - Waited until the element [[ChromeDriver: chrome on windows (44e05bfaf9402585893f651d37a12f5d)] -> css selector: input[placeholder=To]] is clickable
+2024-01-29 08:32:44.122 INFO [main] [com.project.utilities.WaitFactory.isTextPresent(WaitFactory.java:75)] - Waited until the text Bengaluru is present
+2024-01-29 08:32:44.155 DEBUG [main] [com.project.pageobjects.appmodules.HomePage.enterFromToCity(HomePage.java:155)] - The first role option is Bengaluru, India
+2024-01-29 08:32:44.323 INFO [main] [com.project.pageobjects.appmodules.HomePage.enterFromToCity(HomePage.java:157)] - Selected the to city Bengaluru, India
+2024-01-29 08:32:44.332 DEBUG [main] [com.project.pageobjects.appmodules.HomePage.selectTommorowDate(HomePage.java:168)] - The month to select is January
+2024-01-29 08:32:44.332 DEBUG [main] [com.project.pageobjects.appmodules.HomePage.selectTommorowDate(HomePage.java:170)] - The year to select is 2024
+2024-01-29 08:32:44.333 DEBUG [main] [com.project.pageobjects.appmodules.HomePage.selectTommorowDate(HomePage.java:172)] - The day to select is 30
+2024-01-29 08:32:44.380 INFO [main] [com.project.utilities.WaitFactory.WaitForElementUntilClickable(WaitFactory.java:59)] - Waited until the element [[ChromeDriver: chrome on windows (44e05bfaf9402585893f651d37a12f5d)] -> xpath: //span[text()='Departure']] is clickable
+2024-01-29 08:32:44.509 INFO [main] [com.project.pageobjects.appmodules.HomePage.clickFlightSelectOption(HomePage.java:40)] - Successfully clicked on the flight search option Departure
+2024-01-29 08:32:44.551 INFO [main] [com.project.utilities.WaitFactory.WaitForElementUntilClickable(WaitFactory.java:59)] - Waited until the element [[ChromeDriver: chrome on windows (44e05bfaf9402585893f651d37a12f5d)] -> xpath: //div[text()='January 2024']/ancestor::div[@class='DayPicker-Month']//div[@class='dateInnerCell']/p[text()='30']] is clickable
+2024-01-29 08:32:44.551 INFO [main] [com.project.pageobjects.appmodules.HomePage.selectTommorowDate(HomePage.java:175)] - Successfully selected tommorows date
+2024-01-29 08:32:44.596 INFO [main] [com.project.utilities.WaitFactory.WaitForElementUntilClickable(WaitFactory.java:59)] - Waited until the element [[ChromeDriver: chrome on windows (44e05bfaf9402585893f651d37a12f5d)] -> xpath: //span[text()='Travellers & Class']] is clickable
+2024-01-29 08:32:44.735 INFO [main] [com.project.pageobjects.appmodules.HomePage.clickFlightSelectOption(HomePage.java:40)] - Successfully clicked on the flight search option Travellers & Class
+2024-01-29 08:32:44.791 INFO [main] [com.project.utilities.WaitFactory.WaitForElementUntilClickable(WaitFactory.java:59)] - Waited until the element [[ChromeDriver: chrome on windows (44e05bfaf9402585893f651d37a12f5d)] -> xpath: //p[contains(text(),'ADULT')]/parent::div//li[text()='2']] is clickable
+2024-01-29 08:32:44.906 INFO [main] [com.project.pageobjects.appmodules.HomePage.selectTravellAndClassOption(HomePage.java:46)] - Successfully clicked on the travell and class option ADULT
+2024-01-29 08:32:44.952 INFO [main] [com.project.utilities.WaitFactory.WaitForElementUntilClickable(WaitFactory.java:59)] - Waited until the element [[ChromeDriver: chrome on windows (44e05bfaf9402585893f651d37a12f5d)] -> xpath: //p[contains(text(),'CHILDREN')]/parent::div//li[text()='3']] is clickable
+2024-01-29 08:32:45.040 INFO [main] [com.project.pageobjects.appmodules.HomePage.selectTravellAndClassOption(HomePage.java:46)] - Successfully clicked on the travell and class option CHILDREN
+2024-01-29 08:32:45.088 INFO [main] [com.project.utilities.WaitFactory.WaitForElementUntilClickable(WaitFactory.java:59)] - Waited until the element [[ChromeDriver: chrome on windows (44e05bfaf9402585893f651d37a12f5d)] -> xpath: //p[contains(text(),'INFANT')]/parent::div//li[text()='1']] is clickable
+2024-01-29 08:32:45.199 INFO [main] [com.project.pageobjects.appmodules.HomePage.selectTravellAndClassOption(HomePage.java:46)] - Successfully clicked on the travell and class option INFANT
+2024-01-29 08:32:45.362 INFO [main] [com.project.pageobjects.appmodules.HomePage.selectTravellClass(HomePage.java:56)] - Successfully selected the travell option Economy/Premium Economy
+2024-01-29 08:32:45.366 DEBUG [main] [test.project.stepdefinitions.Hooks.tearDown(Hooks.java:46)] - executed scenario Verify the user can search for a one way flight and get the results, file:///C:/Users/Dhanesh%20M/Sruthi/SampleProject/src/test/resources/features/homepage.feature, status: PASSED
+2024-01-29 08:32:45.695 WARN [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:48)] - The data provider is not null and cannot create new instance
+2024-01-29 08:32:45.696 DEBUG [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:50)] - Property /src/test/resources/screenshots/ readed successfully
+2024-01-29 08:32:45.697 WARN [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:48)] - The data provider is not null and cannot create new instance
+2024-01-29 08:32:45.697 DEBUG [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:50)] - Property true readed successfully
+2024-01-29 08:32:45.697 INFO [main] [com.project.webdriverfactory.ThreadManager.setDriverThreadSafe(ThreadManager.java:18)] - Executing with thread id 1
+2024-01-29 08:32:45.699 WARN [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:48)] - The data provider is not null and cannot create new instance
+2024-01-29 08:32:45.700 DEBUG [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:50)] - Property https://www.makemytrip.com/ readed successfully
+2024-01-29 08:32:45.735 WARN [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:48)] - The data provider is not null and cannot create new instance
+2024-01-29 08:32:45.736 DEBUG [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:50)] - Property /src/test/resources/screenshots/ readed successfully
+2024-01-29 08:32:45.736 WARN [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:48)] - The data provider is not null and cannot create new instance
+2024-01-29 08:32:45.736 DEBUG [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:50)] - Property true readed successfully
+2024-01-29 08:32:45.737 INFO [main] [com.project.webdriverfactory.ThreadManager.setDriverThreadSafe(ThreadManager.java:18)] - Executing with thread id 1
+2024-01-29 08:32:45.738 WARN [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:48)] - The data provider is not null and cannot create new instance
+2024-01-29 08:32:45.738 DEBUG [main] [com.project.utilities.DataProvider.getProperty(DataProvider.java:50)] - Property https://www.makemytrip.com/ readed successfully
