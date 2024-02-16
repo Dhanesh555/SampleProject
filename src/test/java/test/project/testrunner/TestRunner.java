@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features = "src/test/resources/features",
 		glue = "test.project.stepdefinitions",
-		tags = "",
+		tags = "@searchOneWayFlight",
 		monochrome = true,
 		plugin = {"pretty", "html:target/cucumberReport.html"},
 		snippets = SnippetType.CAMELCASE

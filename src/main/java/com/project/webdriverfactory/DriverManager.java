@@ -20,7 +20,7 @@ public class DriverManager {
 	private static DriverManager driverManager = null;
 	Browser browser = Browser.valueOf(DataProvider.getProperty("browser.name"));
 	private static Logger logger = LogManager.getLogger(DriverManager.class);
-	
+	private String isHeadless = DataProvider.getProperty("browser.mode.headless");
 
 	private DriverManager() {
 
@@ -30,7 +30,7 @@ public class DriverManager {
 	public static WebDriver getDriver() {
 
 		if (driverManager == null) {
-			
+
 			logger.info("Instantiating driver manager");
 			driverManager = new DriverManager();
 		}
@@ -40,7 +40,7 @@ public class DriverManager {
 	private WebDriver launchBrowser() {
 
 		if (driver == null) {
-			
+
 			logger.info("driver is null and creating new driver instance");
 			switch (browser) {
 			case CHROME:
@@ -50,6 +50,8 @@ public class DriverManager {
 				options.addArguments("--remote-allow-origins=*");
 				options.addArguments("--disable-popup-blocking");
 				options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+				if (Boolean.parseBoolean(isHeadless))
+					options.addArguments("--headless=new");
 				driver = new ChromeDriver(options);
 				logger.info("Launched chrome browser successfully");
 				break;
@@ -59,7 +61,7 @@ public class DriverManager {
 				break;
 			default:
 				logger.error("Invalid browser name: ", browser);
-				throw new WebDriverException("Invalid browser name"+ browser);
+				throw new WebDriverException("Invalid browser name" + browser);
 			}
 		}
 		return driver;
@@ -72,26 +74,23 @@ public class DriverManager {
 			driver.quit();
 			driverManager = null;
 			driver = null;
-		}
-		else
+		} else
 			logger.warn("Driver instance is already null, not able to quit the browser");
 	}
 
 	public static void closeDriver() {
 
 		if (driver != null) {
-			driver.quit();
+			driver.close();
 			logger.info("The driver manager is assigned to null");
-		}			
-		else
+		} else
 			logger.warn("Driver instance is already null, not able to close the browser");
 	}
-	
+
 	public static void launchURL(String url) {
-		
+
 		getDriver().get(url);
 		logger.info("Successfully navigated to the url {}", url);
-		driver.manage().deleteAllCookies();
-		getDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+		getDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(3));
 	}
 }
